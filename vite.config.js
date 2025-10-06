@@ -3,12 +3,14 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/js/main.js'],
-            refresh: true,
-        }),
-        vue(),
-    ],
+  plugins: [
+    laravel({
+      input: ['resources/js/main.js'],
+      refresh: true,
+    }),
+    vue(),
+  ],
+  server: {
+    host: '127.0.0.1',
+  },
 });
-

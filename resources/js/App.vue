@@ -1,7 +1,10 @@
 <template>
   <div>
-    <h1>Admin Dashboard</h1>
-    <router-link to="/products">Products</router-link>
+    <Navbar />
     <router-view />
   </div>
 </template>
+
+<script setup>
+import Navbar from './components/Navbar.vue';
+</script>
